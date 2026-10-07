@@ -14,7 +14,7 @@ const colorFor = (timelineId) =>
 /* Table of contents                                                   */
 /* ------------------------------------------------------------------ */
 
-function TableOfContents({ index, onSelect, onClose }) {
+function TableOfContents({ index, onSelect, onClose, mode, activeTimeline }) {
   const [expanded, setExpanded] = useState(() =>
     Object.fromEntries(timelines.map((t) => [t.id, true]))
   )
@@ -59,14 +59,26 @@ function TableOfContents({ index, onSelect, onClose }) {
 
       <p className="toc-summary">
         {chapters.length} of {totalChaptersPlanned} chapters written — three
-        timelines, {plannedPerTimeline} chapters each. Chapters are listed in
-        reading order.
+        timelines, {plannedPerTimeline} chapters each.{' '}
+        {mode === 'timeline' ? (
+          <>
+            You are following <strong>Timeline {activeTimeline}</strong>; the
+            other timelines are dimmed.
+          </>
+        ) : (
+          <>Chapters are listed in reading order.</>
+        )}
       </p>
 
       {grouped.map(({ timeline, items }) => {
         const isOpen = expanded[timeline.id]
+        const isFollowed = mode === 'timeline' && timeline.id === activeTimeline
+        const isDimmed = mode === 'timeline' && !isFollowed
         return (
-          <section key={timeline.id} className="toc-group">
+          <section
+            key={timeline.id}
+            className={`toc-group ${isDimmed ? 'toc-group-dimmed' : ''}`}
+          >
             <button
               className="toc-group-header"
               onClick={() => toggle(timeline.id)}
@@ -77,6 +89,9 @@ function TableOfContents({ index, onSelect, onClose }) {
               <span className="toc-group-label">
                 <span className="toc-group-name">
                   Timeline {timeline.id} — {timeline.name}
+                  {isFollowed && (
+                    <span className="toc-following">following</span>
+                  )}
                 </span>
                 <span className="toc-group-meta">
                   {timeline.written} of {timeline.planned} written
@@ -175,19 +190,108 @@ function TableOfContents({ index, onSelect, onClose }) {
 /* Reader                                                              */
 /* ------------------------------------------------------------------ */
 
+const READING_MODE_KEY = 'shade:reading-mode'
+
+/**
+ * Reading mode: 'interleaved' walks all three timelines in the manuscript's
+ * published order; 'timeline' stays inside one timeline to the end.
+ *
+ * Persisted so the choice survives a reload — the reader who picks one timeline
+ * does not want to be dropped back into interleaved order on every visit.
+ */
+function useReadingMode() {
+  const [mode, setMode] = useState(() => {
+    if (typeof window === 'undefined') return 'interleaved'
+    const saved = window.localStorage.getItem(READING_MODE_KEY)
+    return saved === 'timeline' ? 'timeline' : 'interleaved'
+  })
+
+  useEffect(() => {
+    try {
+      window.localStorage.setItem(READING_MODE_KEY, mode)
+    } catch {
+      // Private mode or storage disabled: the mode still works for this visit.
+    }
+  }, [mode])
+
+  return [mode, setMode]
+}
+
 function Reader({ onExit }) {
   const [index, setIndex] = useState(0)
   const [tocOpen, setTocOpen] = useState(false)
+  const [mode, setMode] = useReadingMode()
+  const [pinnedTimeline, setPinnedTimeline] = useState(null)
   const chapter = chapters[index]
 
-  const goPrev = useCallback(
-    () => setIndex((i) => Math.max(0, i - 1)),
-    []
-  )
-  const goNext = useCallback(
-    () => setIndex((i) => Math.min(chapters.length - 1, i + 1)),
-    []
-  )
+  // Which timeline we are reading as a single thread. In interleaved mode the
+  // highlight simply follows the chapter on screen; in single-timeline mode it
+  // is the timeline the reader chose to follow.
+  const activeTimeline =
+    mode === 'timeline' ? pinnedTimeline ?? chapter.timeline : chapter.timeline
+
+  /**
+   * The ordered list of global chapter indices the Prev/Next buttons walk.
+   * In interleaved mode this is every chapter; in timeline mode only the
+   * chapters of the active timeline.
+   */
+  const sequence = useMemo(() => {
+    if (mode === 'interleaved') return chapters.map((_, i) => i)
+    return chapters
+      .map((c, i) => ({ c, i }))
+      .filter(({ c }) => c.timeline === activeTimeline)
+      .map(({ i }) => i)
+  }, [mode, activeTimeline])
+
+  // Position of the chapter on screen within the current sequence. A chapter
+  // outside the sequence (e.g. mode switched while reading another timeline)
+  // reports -1 and resolves to the start of the sequence.
+  const cursor = sequence.indexOf(index)
+
+  const goPrev = useCallback(() => {
+    const at = sequence.indexOf(index)
+    if (at > 0) setIndex(sequence[at - 1])
+  }, [sequence, index])
+
+  const goNext = useCallback(() => {
+    const at = sequence.indexOf(index)
+    if (at >= 0 && at < sequence.length - 1) setIndex(sequence[at + 1])
+  }, [sequence, index])
+
+  const atStart = cursor <= 0
+  const atEnd = cursor === -1 || cursor >= sequence.length - 1
+
+  // Switching modes or timelines must land on a chapter that belongs to the
+  // new sequence, otherwise the reader would see an out-of-order chapter with
+  // disabled controls.
+  const switchMode = (next) => {
+    if (next === 'timeline') {
+      setPinnedTimeline(chapter.timeline)
+      if (chapter.timeline !== activeTimeline) {
+        const first = chapters.findIndex((c) => c.timeline === chapter.timeline)
+        if (first >= 0) setIndex(first)
+      }
+    } else {
+      setPinnedTimeline(null)
+    }
+    setMode(next)
+  }
+
+  const selectTimeline = (timelineId) => {
+    if (mode === 'timeline') setPinnedTimeline(timelineId)
+    const first = chapters.findIndex((c) => c.timeline === timelineId)
+    if (first >= 0) setIndex(first)
+  }
+
+  // Jumping from the table of contents into another timeline in single-timeline
+  // mode means the reader wants to follow that timeline, so move the pin with
+  // them rather than leaving the sequence pointing at the old timeline.
+  const jumpTo = (target) => {
+    if (mode === 'timeline' && chapters[target].timeline !== activeTimeline) {
+      setPinnedTimeline(chapters[target].timeline)
+    }
+    setIndex(target)
+  }
 
   // Keyboard navigation, but not while the reader has focus in an input.
   useEffect(() => {
@@ -206,8 +310,18 @@ function Reader({ onExit }) {
     window.scrollTo({ top: 0, behavior: 'smooth' })
   }, [index])
 
-  // Reading progress across the written chapters.
-  const position = `${index + 1} of ${chapters.length}`
+  const position =
+    cursor >= 0
+      ? `${cursor + 1} of ${sequence.length}`
+      : `1 of ${sequence.length}`
+
+  // Word count of the current sequence, so single-timeline reading shows a
+  // meaningful total rather than the whole novel's.
+  const sequenceWords = sequence.reduce(
+    (n, i) => n + chapters[i].wordCount,
+    0
+  )
+  const nextIndex = cursor >= 0 ? sequence[cursor + 1] : undefined
 
   return (
     <div className="app">
@@ -229,6 +343,39 @@ function Reader({ onExit }) {
           </div>
         </div>
 
+        {/* Order control: read the timelines interleaved as published, or
+            follow one timeline straight through. */}
+        <div className="order-bar">
+          <span className="order-label">Reading order</span>
+          <div className="order-switch" role="group" aria-label="Reading order">
+            <button
+              className={`order-option ${mode === 'interleaved' ? 'active' : ''}`}
+              onClick={() => switchMode('interleaved')}
+              aria-pressed={mode === 'interleaved'}
+            >
+              All three, interleaved
+            </button>
+            <button
+              className={`order-option ${mode === 'timeline' ? 'active' : ''}`}
+              onClick={() => switchMode('timeline')}
+              aria-pressed={mode === 'timeline'}
+            >
+              One timeline
+            </button>
+          </div>
+
+          {mode === 'timeline' && (
+            <span className="order-current" style={{ color: colorFor(activeTimeline) }}>
+              following Timeline {activeTimeline} —{' '}
+              {timelines.find((t) => t.id === activeTimeline)?.name}
+              {' · '}
+              {sequence.length}{' '}
+              {sequence.length === 1 ? 'chapter' : 'chapters'} written,{' '}
+              {sequenceWords.toLocaleString()} words
+            </span>
+          )}
+        </div>
+
         <div className="reader-layout">
           {tocOpen && (
             <>
@@ -239,8 +386,10 @@ function Reader({ onExit }) {
               />
               <TableOfContents
                 index={index}
+                mode={mode}
+                activeTimeline={activeTimeline}
                 onSelect={(i) => {
-                  setIndex(i)
+                  jumpTo(i)
                   setTocOpen(false)
                 }}
                 onClose={() => setTocOpen(false)}
@@ -250,35 +399,40 @@ function Reader({ onExit }) {
 
           <main className="reader-main">
             {/* Timeline strip: shows all three timelines at a glance and which
-                one you are currently in. */}
+                one you are currently in. In single-timeline mode this is the
+                timeline selector. */}
             <div className="timeline-strip">
-              {timelines.map((t) => (
-                <button
-                  key={t.id}
-                  className={`timeline-chip ${
-                    t.id === chapter.timeline ? 'active' : ''
-                  }`}
-                  style={{ '--timeline-color': t.color }}
-                  onClick={() => {
-                    const first = chapters.findIndex(
-                      (c) => c.timeline === t.id
-                    )
-                    if (first >= 0) setIndex(first)
-                  }}
-                  title={t.blurb}
-                >
-                  <span
-                    className="timeline-chip-dot"
-                    style={{ background: t.color }}
-                  />
-                  <span className="timeline-chip-text">
-                    <span className="timeline-chip-name">{t.name}</span>
-                    <span className="timeline-chip-count">
-                      {t.written} of {t.planned} written
+              {timelines.map((t) => {
+                const isActive = t.id === activeTimeline
+                return (
+                  <button
+                    key={t.id}
+                    className={`timeline-chip ${isActive ? 'active' : ''}`}
+                    style={{ '--timeline-color': t.color }}
+                    onClick={() => selectTimeline(t.id)}
+                    title={
+                      mode === 'timeline'
+                        ? `Follow Timeline ${t.id} — ${t.name}`
+                        : t.blurb
+                    }
+                    aria-pressed={mode === 'timeline' ? isActive : undefined}
+                  >
+                    <span
+                      className="timeline-chip-dot"
+                      style={{ background: t.color }}
+                    />
+                    <span className="timeline-chip-text">
+                      <span className="timeline-chip-name">{t.name}</span>
+                      <span className="timeline-chip-count">
+                        {t.written} of {t.planned} written
+                      </span>
                     </span>
-                  </span>
-                </button>
-              ))}
+                    {mode === 'timeline' && isActive && (
+                      <span className="timeline-chip-flag">following</span>
+                    )}
+                  </button>
+                )
+              })}
             </div>
 
             {/* In-timeline chapter picker: every chapter of the current
@@ -342,11 +496,7 @@ function Reader({ onExit }) {
             </article>
 
             <div className="reader-controls">
-              <button
-                className="nav-button"
-                onClick={goPrev}
-                disabled={index === 0}
-              >
+              <button className="nav-button" onClick={goPrev} disabled={atStart}>
                 ← Previous
               </button>
               <button className="nav-button toc-inline" onClick={() => setTocOpen(true)}>
@@ -355,35 +505,67 @@ function Reader({ onExit }) {
               <button
                 className="nav-button nav-button-primary"
                 onClick={goNext}
-                disabled={index === chapters.length - 1}
+                disabled={atEnd}
               >
                 Next →
               </button>
             </div>
 
             {/* Next chapter preview, labelled with its timeline. */}
-            {index < chapters.length - 1 && (
+            {nextIndex !== undefined && (
               <div
                 className="up-next"
-                style={{ '--timeline-color': colorFor(chapters[index + 1].timeline) }}
+                style={{
+                  '--timeline-color': colorFor(chapters[nextIndex].timeline),
+                }}
               >
                 <span className="up-next-label">Next</span>
                 <span className="up-next-body">
                   <span
                     className="up-next-timeline"
-                    style={{ color: colorFor(chapters[index + 1].timeline) }}
+                    style={{ color: colorFor(chapters[nextIndex].timeline) }}
                   >
-                    Timeline {chapters[index + 1].timeline} —{' '}
-                    {chapters[index + 1].timelineName}
+                    {mode === 'timeline'
+                      ? `Still Timeline ${chapters[nextIndex].timeline}`
+                      : `Timeline ${chapters[nextIndex].timeline}`}{' '}
+                    — {chapters[nextIndex].timelineName}
                   </span>
                   <span className="up-next-title">
-                    Chapter {chapters[index + 1].chapterNumber}:{' '}
-                    {chapters[index + 1].title}
+                    Chapter {chapters[nextIndex].chapterNumber}:{' '}
+                    {chapters[nextIndex].title}
                   </span>
                 </span>
                 <button className="up-next-go" onClick={goNext}>
                   Read →
                 </button>
+              </div>
+            )}
+
+            {atEnd && mode === 'timeline' && (
+              <div className="timeline-end">
+                <p>
+                  That is every written chapter of Timeline {activeTimeline} —{' '}
+                  {timelines.find((t) => t.id === activeTimeline)?.name}.{' '}
+                  <button
+                    className="inline-link"
+                    onClick={() => switchMode('interleaved')}
+                  >
+                    Read all three interleaved
+                  </button>{' '}
+                  or{' '}
+                  <button
+                    className="inline-link"
+                    onClick={() => {
+                      const next = timelines.find(
+                        (t) => t.id !== activeTimeline
+                      )
+                      if (next) selectTimeline(next.id)
+                    }}
+                  >
+                    switch timeline
+                  </button>
+                  .
+                </p>
               </div>
             )}
 
@@ -393,8 +575,21 @@ function Reader({ onExit }) {
                   {totalChaptersPlanned - chapters.length} chapters still
                   forming.
                 </strong>{' '}
-                The full novel is {totalChaptersPlanned} chapters across three
-                timelines — {plannedPerTimeline} each, appearing in threes.
+                {mode === 'timeline' ? (
+                  <>
+                    You are following Timeline {activeTimeline} —{' '}
+                    {sequence.length} of {plannedPerTimeline} chapters written,{' '}
+                    {sequenceWords.toLocaleString()} words. The other two
+                    timelines run alongside it.
+                  </>
+                ) : (
+                  <>
+                    The full novel is {totalChaptersPlanned} chapters across
+                    three timelines — {plannedPerTimeline} each, appearing in
+                    threes. Switch to <em>One timeline</em> to follow a single
+                    thread straight through.
+                  </>
+                )}
               </p>
             </div>
           </main>

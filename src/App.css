@@ -629,6 +629,66 @@ body {
   color: var(--accent);
 }
 
+/* ===== READING ORDER CONTROL ===== */
+.order-bar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  padding: 10px 14px;
+  background: #0d0d0d;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  margin-bottom: 18px;
+}
+
+.order-label {
+  font-size: 0.7em;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+}
+
+.order-switch {
+  display: flex;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.order-option {
+  background: transparent;
+  border: none;
+  color: var(--text-secondary);
+  font-family: inherit;
+  font-size: 0.8em;
+  padding: 7px 14px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  white-space: nowrap;
+}
+
+.order-option + .order-option {
+  border-left: 1px solid var(--border);
+}
+
+.order-option:hover {
+  color: var(--text-primary);
+  background: #161616;
+}
+
+.order-option.active {
+  background: var(--accent);
+  color: #000;
+  font-weight: 600;
+}
+
+.order-current {
+  font-size: 0.75em;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
 /* ===== TIMELINE STRIP ===== */
 .timeline-strip {
   display: flex;
@@ -691,6 +751,45 @@ body {
   font-size: 0.65em;
   color: var(--text-secondary);
   font-variant-numeric: tabular-nums;
+}
+
+.timeline-chip-flag {
+  flex-shrink: 0;
+  margin-left: auto;
+  font-size: 0.6em;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--timeline-color);
+  font-weight: 700;
+}
+
+/* Timeline groups not being followed are dimmed so the single-thread choice
+   is visible in the contents panel too. */
+.toc-group-dimmed {
+  opacity: 0.45;
+}
+
+.toc-following {
+  margin-left: 6px;
+  font-size: 0.8em;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--timeline-color);
+  font-weight: 700;
+}
+
+.timeline-end {
+  padding: 16px 20px;
+  background: #0d0d0d;
+  border: 1px dashed var(--border);
+  border-radius: 8px;
+  margin-bottom: 28px;
+}
+
+.timeline-end p {
+  color: var(--text-secondary);
+  font-size: 0.85em;
+  line-height: 1.7;
 }
 
 .chapter-nav-wrap {
