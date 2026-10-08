@@ -12,7 +12,7 @@ export const timelines = [
     "color": "#ff6b4a",
     "blurb": "Near future. An asteroid is detected, and the race to escape begins — until the escape itself becomes the disaster.",
     "planned": 20,
-    "written": 18
+    "written": 19
   },
   {
     "id": 2,
@@ -20,7 +20,7 @@ export const timelines = [
     "color": "#4a9eff",
     "blurb": "Years after the Shade. Survivors underground keep a reactor alive and send expeditions into the dark.",
     "planned": 20,
-    "written": 18
+    "written": 19
   },
   {
     "id": 3,
@@ -28,7 +28,7 @@ export const timelines = [
     "color": "#ffd24a",
     "blurb": "Concurrent with the bunker. A city of boats survives inside the one patch of sunlight left on Earth.",
     "planned": 20,
-    "written": 18
+    "written": 19
   }
 ]
 
@@ -1953,7 +1953,7 @@ export const chapters = [
     "chapterNumber": 18,
     "title": "The Constellation",
     "setting": "Concurrent — life inside the sunlight patch",
-    "wordCount": 1164,
+    "wordCount": 1156,
     "paragraphs": [
       "The lens is not done, and the lens will never be done, and that is the point.",
       "Yorke understands this on the thirtieth day of building, standing on the barge with her hands raw from welding and her eyes raw from the light, looking at the thing they are building, which is not a thing at all, which is a way of seeing. The lens gathers the dark's own light. The lens pours it down. The lens makes a circle of gold in the dark, and the circle is a place to live, and a place to live is a thing worth building, even if the building is never done.",
@@ -1975,7 +1975,107 @@ export const chapters = [
       "The names go on the sketchbook. The sketchbook is full now — full of drawings, full of names, full of the count, full of the whole long terrible beautiful history of the city from the patch to the door to the harbour, and Yuki closes it on the thirtieth day and gives it to Emiko, and Emiko opens it, and on the first blank page, in the light of the third circle, she writes the count.",
       "*One hundred and sixty-seven boats. Eight hundred and ninety-three people. Three circles of light. The count is rising.*",
       "She closes the sketchbook. She looks at the harbour, at the lights, at the circles, at the boats, at the people, at the whole impossible thing they have built and are building and will never finish building, and she understands that the count is not the number. The count is the counting. The counting is the keeping. The keeping is the harbour. The harbour is the light. The light is the dark, gathered. The dark is not gone. The dark is never gone. But the dark is full of light, and the light is full of people, and the people are counting, and the counting is the way back, and the way back is the way forward, walked twice.",
-      "The constellation is rising. The constellation is not in the sky. The constellation is on the water, and the water is the world, and the world is dark, and the dark is full of light, and the light is full of people, and the people are not alone.",
+      "The constellation is rising. The constellation is not in the sky. The constellation is on the water, and the water is the world, and the world is dark, and the dark is full of light, and the light is full of people, and the people are not alone."
+    ]
+  },
+  {
+    "id": 55,
+    "timeline": 1,
+    "timelineName": "The Race",
+    "chapterNumber": 19,
+    "title": "The Summit",
+    "setting": "Near future — Earth races to escape",
+    "wordCount": 1293,
+    "paragraphs": [
+      "Zara comes to the caldera on the sixtieth day of the dark, and she comes the way she has always come: with a convoy, with a manifest, with the unhurried discipline of a woman who has been preparing for this day for two years and is not going to rush it now that it is here.",
+      "The convoy is forty vehicles. The manifest is everything the caldera needs and cannot make: seed stock, medical isotopes, reactor-grade coolant, machine tools, and forty-one cases of the one thing Amara did not ask for and does not understand until she opens the first one: lamps. The heavy, ugly, brick-celled lamps Zara has been keeping for a decade against the emergency that has now arrived.",
+      "\"Four hundred and eleven,\" Zara says, by way of greeting. She is standing in the caldera's control room, looking at the board where Amara has been tracking the lights. \"I counted them on the way in. Your array sees four hundred and eleven. My network has four hundred and thirty. There are nineteen your array can't see — the deep ones, the ones that shielded their lamps because they were afraid the light would bring the dark down on them. They're wrong. The light doesn't bring the dark. The light is the only thing that doesn't.\" She looks at Amara. \"But you know that. You're the one who taught the array to see. I'm the one who taught the lamps to burn. Between the two of us, we've built the sky.\"",
+      "\"You didn't come forty vehicles deep to tell me the count.\"",
+      "\"No.\" Zara sets down a case. A real case, metal, old, the kind of case that held something precious in the before. \"I came because the dark is not the end of the war, Amara. The dark is the beginning of it. The lid is down. The lock is broken. The array is a lighthouse. But a lighthouse is a thing that guides ships, and ships have crews, and crews have captains, and captains have wars. The dark is full of people, and people are full of wars, and the war for the dark is starting now, and I am not going to lose it, because I have spent two years building the thing that wins it, and the thing that wins it is not a weapon. It is a network. And a network needs a summit.\"",
+      "She opens the case. Inside, on foam, is a single object: a lamp. But not the brick-celled reactor lamps. This one is different. This one is small, and elegant, and it is burning, and the light it throws is the deep full-spectrum gold of the agri-dome, of the Lantern, of the lens.",
+      "\"A lens lamp,\" Amara breathes.",
+      "\"A lens lamp. My people built it. Your people taught them, through the array, without knowing they were teaching. The array taught everyone, Amara. That's what it does. It taught Yuki's handshake to every lamp in the dark, and the lamps taught it back, and now the whole network speaks the same language, and the language is light, and the light is a lens, and a lens is a thing that gathers. And I have come to gather.\" She looks at Amara, and her eyes are the eyes of a woman who has been gathering for two years and is not done. \"The four hundred and thirty. I want to bring them together. Not in one place — you can't move four hundred and thirty lights — but in one network. One council. One vote. One count. The floating city taught me that. The vote, the rope, the rule of three. I want to build a council of the dark, and I want the council to meet, and I want it to meet here, at the caldera, because the caldera is the place where the lid was built, and the lid is the thing we are all building against, and the best place to build against a thing is in the shadow of the thing you are building against.\"",
+      "Amara looks at the lamp. The lens lamp. The gathering of the dark's own light, poured down, made small, made portable, made into a thing that can be carried from place to place, lamp to lamp, hand to hand.",
+      "\"You want to hold a summit,\" she says. \"Here. In the dark. With four hundred and thirty lights.\"",
+      "\"I want to hold a summit,\" Zara agrees. \"And I want you to chair it. Not because you're the one who built the lid. Because you're the one who broke it. Because the one who breaks the lid is the one who knows where the pieces fell, and the pieces are the people, and the people are the light, and the light is the only thing we have left.\" She closes the case. \"Say yes, Amara. Say yes, and I'll send the lamps. All four hundred and thirty of them. And the caldera will be the brightest place on the dark earth, and the dark earth will look at the caldera, and it will see that the place where the lid was built is the place where the light is kept, and it will understand that the lid is not the end of the story. The lid is the beginning of the story. The story is what we build in the dark.\"",
+      "Amara thinks of Garrett. Of the lid. Of the lock, broken. Of the array, pointing. Of the four hundred and eleven lights, and the nineteen more, and the four hundred and thirty, and the count, and the counting, and the keeping.",
+      "\"Yes,\" she says.",
+      "Zara smiles. It is not a kind smile. It is the smile of a woman who has just won the only war that matters.",
+      "\"Then we'd better get to work,\" she says. \"The lamps won't light themselves.\"",
+      "The lamps arrive over the next nineteen days. They come in convoys, in boats, on sleds, on foot. They come from Zara's network and Kwame's corridors and the FreeLight towers and the bunkers and the domes and the floating cities, and they come with their keepers, and the keepers are the people who have been keeping the lights in the dark for ten years, and they are tired, and they are afraid, and they are more determined than any people have ever been, because they have been keeping the lights for ten years and they are not going to stop now.",
+      "The caldera fills with lights. Four hundred and thirty of them, and then more, because the count is rising, because the count is always rising, because the counting is the keeping and the keeping is the light and the light is the dark, gathered, and the dark is not gone, but the dark is full of light, and the light is full of people, and the people are coming to the caldera, and the caldera is the brightest place on the dark earth, and the summit is beginning.",
+      "Amara stands at the console, the lead console, the one she has not left except to sleep in six weeks, and she looks at the board, and the board is full of lights, and the lights are full of people, and the people are coming, and the coming is the counting, and the counting is the keeping, and the keeping is the light, and the light is the only thing that has ever mattered.",
+      "She opens the channel. All of them. All four hundred and thirty.",
+      "\"This is Amara Okafor,\" she says. \"I built the lid. I broke the lid. And I'm calling the first summit of the dark to order. Welcome to the caldera. Welcome to the light.\"",
+      "The lamps burn. The people answer. The summit begins."
+    ]
+  },
+  {
+    "id": 56,
+    "timeline": 2,
+    "timelineName": "The Bunker",
+    "chapterNumber": 19,
+    "title": "The Alliance",
+    "setting": "Years after the Shade — survivors underground",
+    "wordCount": 1350,
+    "paragraphs": [
+      "The bunker is empty except for the eight, and the eight are not alone, because the eight are the door, and the door is open, and the door is the point.",
+      "They are the reactor crew, the students Amara taught, the ones who stayed when the sixty-nine became the sixty-one became the ones who walked. They are young, most of them, because the young are the ones who can learn the reactor fastest, and the reactor is the thing that cannot be left, because the reactor is the door, and the door is the door.",
+      "Kira is one of them. Kira, who counted the doors for ten years, who wrote the count in her head like a prayer, who stood in front of Halloway's painted door and learned to walk past it the way you learn not to look at the sun. She stayed. She did not write her name under STAY, because the board was gone, but she stayed, and the staying is the same as the writing, and the writing is the same as the count, and the count is the keeping.",
+      "She is not the keeper of the doors anymore. There are no doors to keep. The doors are all open now, all fifteen, all three occupied and twelve empty, and the empty ones are the ones that matter, because the empty ones are the ones the walkers went through, and the walkers are the reason the door is open, and the door is the reason the walkers are not lost.",
+      "She is the keeper of the radio now. The radio is the door's voice. The radio is how the bunker talks to the array, and the array is how the bunker talks to the world, and the world is four hundred and thirty lights, and the lights are full of people, and the people are talking, and the talking is the alliance.",
+      "The alliance is not a treaty. The alliance is not a government. The alliance is the thing the floating city taught the world, the thing the world has been learning since the first rope came down: the vote, the count, the rule of three, the way of deciding things together that the dark has been teaching everyone who has been keeping a light.",
+      "It starts with the radio. It starts with Kira, in the reactor gallery, in the light of the core, with the radio in her hand and the array in her head, and she is talking to the beacon, and the beacon is talking to the dome, and the dome is talking to the caldera, and the caldera is talking to the floating city, and the floating city is talking to the Lantern, and the Lantern is talking to the four hundred and thirty, and the four hundred and thirty are talking to each other, and the talking is the alliance.",
+      "The first vote is not about the dark. The first vote is about the light.",
+      "It is Kira who calls it. She does not call it because she is the keeper of the radio. She calls it because she is the keeper of the count, and the count is the reason, and the reason is the light.",
+      "\"The beacon is dying,\" she says. She is talking to the alliance, to the four hundred and thirty, to the whole network of lights. \"The beacon on the mast, the one that pointed us to the surface, the one that's been burning for ten years. It's dying. Marcus is keeping it, but Marcus can't keep it forever, and when it dies, the light-circle at the surface goes dark, and the hundred and twenty-six people in the circle go dark, and the door — the door stays open, but the door is dark, and a dark door is not a door, it's a hole.\"",
+      "The alliance is silent. The silence is the silence of four hundred and thirty lights listening.",
+      "\"We can build a lens,\" Kira says. \"The floating city taught us. The Lantern taught us. The array taught us. We can build a lens, and the lens can gather the dark's own light, and the lens can pour it down on the beacon, and the beacon can burn again, and the light-circle can hold, and the door can stay open, and the door can be a door and not a hole. But we can't build it alone. We're eight people. We can keep the reactor, but we can't build the lens. We need help. We need the alliance.\"",
+      "The alliance answers. It answers the way the alliance answers everything: with a vote. The vote is nine days long, because the alliance is four hundred and thirty lights, and four hundred and thirty lights is a lot of votes, and the votes have to be counted, and the counting is the keeping.",
+      "The vote is four hundred and twenty-eight to two.",
+      "The two are not against the lens. The two are against the beacon. They are the two lights who say the beacon is too far, too small, too lost, and the lens should be built for a light that is closer, bigger, more central. They are wrong, and they know they are wrong, and they vote anyway, because the vote is the keeping, and the keeping is the counting, and the counting is the alliance.",
+      "The lens goes up. It goes up on the fortieth day after the vote, and it goes up the way everything goes up in the dark: with rope, with hands, with the slow patient work of people who have learned that the only way to build a thing is to build it together, because together is the only thing that has ever worked.",
+      "The lens gathers the dark's own light. The lens pours it down. The lens falls on the beacon on the mast, and the beacon — the dying beacon, the ten-year-old beacon, the beacon Marcus has been keeping for nineteen days, for forty days, for sixty days, for as long as it takes — the beacon burns again.",
+      "Not with its own light. With the lens's light. With the dark's own light, gathered, poured down, made into a circle of gold on the ice, and the circle is bigger than it was, and brighter, and the hundred and twenty-six people in the circle stand in the light and look up at the mast, and the mast is burning, and the burning is the door, and the door is open, and the door is the alliance, and the alliance is the light.",
+      "Marcus comes down from the mast. He has not left the mast in sixty days. He comes down, and he stands in the light-circle, and he looks at the beacon, and the beacon is burning, and the burning is not his keeping anymore, the burning is the alliance's keeping, and Marcus — Marcus, who has been the one who does not leave, the one who stays, the one who keeps the door — Marcus sits down in the light and he cries, because the keeping is not his anymore, and the not-his is the best thing that has ever happened to him, because the keeping was the loneliest thing he has ever done, and now the keeping is shared, and the shared is the alliance, and the alliance is the light.",
+      "Kira hears it on the radio. She hears the beacon burn, and she hears the alliance vote, and she hears Marcus cry, and she writes it down, because the count is the keeping, and the keeping is the counting, and the counting is the writing, and the writing is the count.",
+      "*The beacon burns. The alliance holds. The door is open. The door is the alliance. The alliance is the light.*",
+      "She closes the log. She looks at the reactor, and the reactor is running, and the running is the keeping, and the keeping is the door, and the door is open, and the door is the alliance, and the alliance is the light, and the light is the only thing that has ever mattered."
+    ]
+  },
+  {
+    "id": 57,
+    "timeline": 3,
+    "timelineName": "The Floating City",
+    "chapterNumber": 19,
+    "title": "Not Alone",
+    "setting": "Concurrent — life inside the sunlight patch",
+    "wordCount": 1526,
+    "paragraphs": [
+      "The harbour is not the biggest light in the dark. That is the thing Yorke has to learn, and the learning is the hardest thing she has ever done, because the harbour was the biggest light she had ever seen, and the seeing was the whole world, and the whole world is not the whole world.",
+      "The summit at the caldera is three hundred kilometres east, and the harbour can see it. Not with the photometer. With the naked eye. On a clear night — and the nights are clear now, because the Shade is a lid, and a lid has no weather, and the weather is gone with the sun — the harbour can see the caldera's light on the horizon, a glow, a smudge, a bruise of gold on the dark, and the glow is bigger than the harbour's glow, and the bigger is the thing Yorke has to learn.",
+      "The harbour is not the biggest light. The harbour is one light. One of four hundred and thirty. One of four hundred and thirty-one, because the harbour counts itself, because the counting is the keeping, and the keeping is the counting, and the harbour is the counting.",
+      "The summit is on the radio. The summit is on every radio, because the summit is the alliance, and the alliance is the radio, and the radio is the light, and the light is the alliance.",
+      "Reika is there. Not in person — you cannot move a council — but on the radio, because the radio is the council, and the council is the radio. She is the harbour's voice, and the harbour's voice is the council's voice, and the council's voice is the vote, and the vote is the alliance.",
+      "Osei is there too. Osei, the keeper of the Lantern, the woman who held the light for ten years, who taught the harbour to be a harbour, who taught the city to be a city. She is not the keeper anymore. The harbour is kept by all of them now, by the rota, by the vote, by the counting. Osei is the harbour's elder, the way Henrik is the dome's elder, the way Kira is the bunker's elder, the way Amara is the caldera's elder, and the elders are the alliance's memory, the way the array is the alliance's voice.",
+      "The summit votes. The summit votes on the thing the alliance has been building toward since the first rope came down: the lens network. The plan to build lenses, not one, not five, but four hundred and thirty, one for every light, one for every door, one for every window, one for every place where people are keeping the dark at bay.",
+      "The vote is not unanimous. The vote is never unanimous, because the vote is the keeping, and the keeping is the counting, and the counting is the truth, and the truth is that four hundred and thirty lights is four hundred and thirty different ways of keeping, and the ways are different, and the difference is the strength.",
+      "The vote is three hundred and ninety-one to thirty-nine.",
+      "The thirty-nine are not against the lenses. The thirty-nine are afraid. They are the lights who have been keeping the longest, the ones who remember the before, the ones who remember the sun, the ones who are afraid that the lenses are a lid, that the gathering is a hoarding, that the network is a lock. They are wrong, and they know they are wrong, and they vote anyway, because the vote is the keeping, and the keeping is the truth, and the truth is that they are afraid, and the fear is real, and the real is the count.",
+      "The three hundred and ninety-one are the alliance. The three hundred and ninety-one are the ones who have learned the thing the floating city taught the world: that the dark is not gone, but the dark is full of light, and the light is full of people, and the people are not alone, and the not-alone is the lens, and the lens is the gathering, and the gathering is the alliance.",
+      "The lens network begins. It begins the way everything begins in the dark: with rope, with hands, with the slow patient work of people who have learned that the only way to build a thing is to build it together, because together is the only thing that has ever worked.",
+      "The harbour builds the lenses for the boats. The boats are the harbour's children, the way the city was the patch's children, the way the Lantern was the dark's children. The harbour builds the lenses, and the boats take the lenses, and the boats sail out into the dark, and the dark is full of lights, and the lights are full of people, and the people are waiting, and the waiting is the keeping.",
+      "Emiko is the one who sails the first lens out. She is sixteen, and she is the harbour's best welder, and she is the harbour's best sailor, and she is the harbour's best teacher, because she is the one who taught the Lantern's children, and the teaching is the sailing, and the sailing is the teaching.",
+      "She sails the first lens out on the *Ayia Marina*, with Nikos at the helm, because Nikos is the one who knows the dark, and the dark is the sailing, and the sailing is the dark. She sails it to the first light, a small light, a new light, a light that has been burning for six days, a light that is a single boat, a single family, a single keeper who has been keeping the dark at bay for six days and does not know how to keep it for seven.",
+      "Emiko shows them. She shows them the lens, and she shows them how to build it, and she shows them how to gather the dark's own light, and she shows them how to pour it down, and she shows them how to make a circle, and the circle is small, and the circle is theirs, and the circle is the keeping, and the keeping is the light, and the light is the not-alone.",
+      "The family weeps. The keeper weeps. Emiko does not weep, because Emiko is the teacher, and the teacher does not weep, the teacher teaches, and the teaching is the keeping, and the keeping is the sailing, and the sailing is the not-alone.",
+      "She sails back to the harbour. She sails back through the dark, and the dark is full of lights, and the lights are full of people, and the people are building lenses, and the lenses are gathering light, and the light is pouring down, and the pouring is the alliance, and the alliance is the not-alone.",
+      "The count is four hundred and thirty-one. The count is rising. The counting is the keeping. The keeping is the light. The light is the dark, gathered. The dark is not gone. The dark is never gone. But the dark is full of light, and the light is full of people, and the people are not alone.",
+      "Yorke stands on the barge, and she looks at the harbour, and the harbour is not the biggest light, and the harbour is not the only light, and the harbour is not the whole world. The harbour is one light. One of four hundred and thirty-one. One of four hundred and thirty-one lights, burning in the dark, all over the world, and the world is dark, and the dark is full of light, and the light is full of people, and the people are not alone.",
+      "She writes it in the notebook. The notebook is full now, full of numbers, full of counts, full of the whole long terrible beautiful history of the measuring, and the measuring is the counting, and the counting is the keeping, and the keeping is the light.",
+      "*Four hundred and thirty-one lights. The count is rising. The counting is the keeping. The keeping is the light. The light is the dark, gathered. The dark is not gone. But the dark is full of light, and the light is full of people, and the people are not alone.*",
+      "She closes the notebook. She looks at the harbour, at the lights, at the circles, at the boats, at the people, at the whole impossible thing they have built and are building and will never finish building, and she understands that the measuring is done. The measuring is done because the counting is done, and the counting is done because the keeping is done, and the keeping is done because the light is here, and the light is here because the people are here, and the people are here because they are not alone.",
+      "The counting is not the number. The counting is the people. The people are the counting. The counting is the light. The light is the dark, gathered. The dark is not gone. But the dark is full of light, and the light is full of people, and the people are not alone.",
       "[Continue with Chapters 3-20 for all three timelines...]"
     ]
   }
