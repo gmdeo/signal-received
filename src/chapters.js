@@ -12,7 +12,7 @@ export const timelines = [
     "color": "#ff6b4a",
     "blurb": "Near future. An asteroid is detected, and the race to escape begins — until the escape itself becomes the disaster.",
     "planned": 20,
-    "written": 16
+    "written": 17
   },
   {
     "id": 2,
@@ -20,7 +20,7 @@ export const timelines = [
     "color": "#4a9eff",
     "blurb": "Years after the Shade. Survivors underground keep a reactor alive and send expeditions into the dark.",
     "planned": 20,
-    "written": 16
+    "written": 17
   },
   {
     "id": 3,
@@ -28,7 +28,7 @@ export const timelines = [
     "color": "#ffd24a",
     "blurb": "Concurrent with the bunker. A city of boats survives inside the one patch of sunlight left on Earth.",
     "planned": 20,
-    "written": 16
+    "written": 17
   }
 ]
 
@@ -1735,7 +1735,7 @@ export const chapters = [
     "chapterNumber": 16,
     "title": "The Eighth Day of Dark",
     "setting": "Concurrent — life inside the sunlight patch",
-    "wordCount": 1501,
+    "wordCount": 1493,
     "paragraphs": [
       "On the eighth day the convoy is sixty kilometres long and the dark is total, and the only light in the world is the light they are carrying and the light they are sailing toward, and the distance between the two is the whole of their lives.",
       "Yorke measures it every hour, not with the photometer — there is nothing to measure, the photometer reads zero and has read zero for eight days — but with the compass and the knot-log and the one thing she has left, which is the photometer pointed at the Lantern's light ahead. It has been growing for eight days. Barely. The gain is the smallest number she has ever worked with, and it is the only number that matters, because it is the number that says they are not sailing in circles, they are not lost, they are closing.",
@@ -1768,7 +1768,121 @@ export const chapters = [
       "But the circle is here. And they are inside it. And the door is held, and the door is open, and the people who held it are waiting on the water with their lamps lit, and the people who sailed through the dark to reach it are arriving, and the two lights — the one they carried and the one they sailed toward — are the same light now.",
       "Osei's voice comes over the water, amplified, calm, the voice of a lighthouse-keeper at the end of a very long watch.",
       "\"Welcome to the Lantern,\" she says. \"You took your time. But you came. That's all that ever matters. Come in. Come in to the light.\"",
-      "And the city comes in.",
+      "And the city comes in."
+    ]
+  },
+  {
+    "id": 49,
+    "timeline": 1,
+    "timelineName": "The Race",
+    "chapterNumber": 17,
+    "title": "The Ground Falls Away",
+    "setting": "Near future — Earth races to escape",
+    "wordCount": 1106,
+    "paragraphs": [
+      "The Shade took the sky on the third day of the seventy hours, and Amara watched it happen from the caldera floor, because there was nowhere else to be and nothing left to do but watch.",
+      "It did not come like night. That was the thing no one had predicted correctly, not even Yuki, and Yuki had predicted everything. It came like a thinness. The sun rose on the second morning the way it always had — the caldera rim, the cold gold, the long shadows — and by noon the gold had gone wrong, and by the second dusk the sun was a coin behind smoked glass, and by the third morning it did not rise so much as leak, a grey seepage over the eastern rim, and the world understood, all at once, all five billion of them, that the lid was down.",
+      "The caldera held a wake. No one called it that. They called it the all-hands, because Garrett was gone and Doan had no orders left worth giving, and the guards came out of their posts and stood with the engineers and the welders and the cooks, two thousand people in the cold grey, looking at the sky, and no one knew what to do with their hands, so they held each other's.",
+      "Amara stood with Yuki. They had not spoken since the private channel, because there was nothing left to say that the sky was not already saying.",
+      "\"They're lighting the lamps,\" Yuki said quietly.",
+      "Amara looked at her.",
+      "\"Zara's network. Kwame's corridors. The FreeLight towers.\" Yuki pointed at the dark horizon, where, very faintly, very far away, a point of light burned. And then another. And another. \"Isaiah told them the lamps were coming. So when the dark came, they were ready. All over the world, right now, people are lighting the lamps they were told to light, because someone finally told them the truth before the truth arrived.\"",
+      "\"Not everyone,\" Amara said.",
+      "\"No. Not everyone. But enough.\" Yuki's voice was steady, but her eyes were wet in the grey light. \"Enough to be a constellation. Enough so that when the array looks down, it sees not just the dark, but the dark with lights in it. I gave it the vectors. All of them. Every lamp Zara told me about, every bunker, every boat. The array is looking at them. It's going to spend the next however-long pointing at them, one by one, saying *I see you, I see you, I see you.*\"",
+      "Amara thought of a beacon on a mast, four thousand kilometres away, and a woman she used to be, and a window held open for ten years.",
+      "\"That's what the array is for,\" she said slowly. \"Not the lid. The lid was a mistake. The array — the array is a lighthouse. It was always a lighthouse. We just built it wrong, pointed wrong, held wrong. You didn't break the lock, Yuki. You broke the *aim*. And now it's aimed at everyone.\"",
+      "Yuki turned to her. In the grey light she looked very young, and very tired, and very much like the student Amara had taught to solve impossible problems, standing at last in front of the impossible solution, which was not a solution at all but a direction.",
+      "\"There's a signal coming in,\" she said. \"On the handshake channel. It started six hours ago. It's not mine. It's — Amara, it's from the ground. Someone is talking to the array on the handshake channel, and the array is answering, and the array is *listening*.\"",
+      "\"Where from?\"",
+      "\"Everywhere. That's the thing. It's not one signal. It's dozens. The array taught itself the handshake — my handshake, the one I wrote into the facet controllers — and it's using it to talk back, to all the lamps, and the lamps are learning to talk back too. It's building a network. It's—\" She stopped, and her voice broke, finally, for the first time in all of it. \"It's not a lid anymore, Amara. It's a bridge. It's a bridge made of light, and it's going to find everyone, and it's going to teach them to find each other, and I did not build that. I built the lid. The bridge is building itself.\"",
+      "Amara put her arm around her. The grey light seeped. The lamps burned on the horizon, one by one, a constellation coming up in the wrong direction, rising from the ground instead of falling from the sky, and the two of them stood together and watched the world they had made — the terrible world, the dark world, the only world — begin, slowly, to find its own way back to light.",
+      "Garrett Voss died on the fifth day.",
+      "It was not heroic, and it was not tragic, and it was not the death he had planned. The extraction capsule, which was never meant for the long dark, lost its thermal regulation on the fourth day, and Garrett, who had spent his life controlling the temperature of rooms, died of the cold on the fifth, in a capsule on a pad at Baikonur, alone, watching the grey sky he had failed to own.",
+      "His daughter was the one who found him. She came in from the pad road with Kwame's people, because Kwame's people owned the pad now, the way Kwame's people were coming to own a great many pads, and she stood over her father's body for a long time, and she did not cry, and she did not speak, and then she went back to the convoys, because the convoys were the work, and the work was the only thing that had ever mattered, and her father had never understood that, and now he never would.",
+      "She sent one message. To the caldera, to Amara Okafor, on the handshake channel, which was open now, which was everywhere now.",
+      "*He said he was sorry. At the end. That's all. It doesn't fix anything. But it was the only true thing he had left, and he said it to me, so I'm passing it to you, because you're the one who deserved to hear it, and you're the one who'll know what to do with it.*",
+      "Amara read it on the caldera floor, in the grey light, with the lamps burning on the horizon, and she closed her eyes, and she thought: *I know what to do with it. I'm going to build the bridge. That's what you do with sorry. You build something with it that sorry couldn't build.*",
+      "She opened her eyes. The grey light seeped. The lamps burned. The work was waiting."
+    ]
+  },
+  {
+    "id": 50,
+    "timeline": 2,
+    "timelineName": "The Bunker",
+    "chapterNumber": 17,
+    "title": "The Way Back",
+    "setting": "Years after the Shade — survivors underground",
+    "wordCount": 1669,
+    "paragraphs": [
+      "The survey party walks for eleven days, and on the eleventh day they find the light the array found, and it is not what they expected.",
+      "It is not a beacon. It is not a mast, or a lamp, or a circle of gold on the ice. It is a greenhouse.",
+      "Kade sees it first, because Kade is in the lead, because Kade is always in the lead. He comes over the ridge at the brightest hour of the second light — the light the array pointed them to, a broad glow on the ice below, bigger than their own beacon by an order of magnitude — and he stops, and the others come up beside him, and no one says anything for a long time.",
+      "It is a dome. It is perhaps sixty metres across, half-buried in the ice, and it is glowing from within, and the glow is not the thin yellow of a reactor lamp but the deep, full-spectrum gold of *sunlight*, and through the dome's skin they can see the shapes of things growing. Rows of them. Green. Green on a scale none of them has seen in ten years.",
+      "\"That's not possible,\" Eugene says.",
+      "\"It's possible,\" Amara says. She is staring at the dome with her engineer's eyes, and her engineer's eyes are telling her things her ten-years-in-the-dark heart cannot accept. \"It's an agri-dome. From the before. A research station. There were dozens of them — Arctic agriculture, cold-climate crops. They had their own fusion microcells. If one of them survived — if someone kept it running — \"",
+      "\"Someone kept it running,\" Kade says.",
+      "There is a door. There is always a door. This one has a light above it, burning, and a path through the ice, worn, walked, and at the door there is a man, and the man is old, and the man is waiting, as if he has been waiting for them, which, it turns out, he has.",
+      "\"You're the ones from the beacon,\" he says. It is not a question. \"The array told me you were coming. Eleven days ago. It said you were walking, and it said how many, and it said to keep the light on and the door open.\" He looks at them, at their frost-grey suits, at their faces, at the way they are staring at the green through the dome's skin. \"My name is Henrik. I've been keeping this place for nine years. I was the agricultural officer, before. When the dark came I was the only one left, and I had the dome, and the dome had the light, and the light had the green, and I thought: well. Somebody has to keep the green. Somebody has to keep the thing that grows. So I kept it.\"",
+      "\"Nine years,\" Kade says. \"Alone.\"",
+      "\"Not alone.\" Henrik steps aside, and holds the door open, and the light comes out, and the warmth comes out, and the smell comes out — soil, and green, and growing things, the smell of life, the smell none of them has smelled in ten years — and there are people in the dome. Dozens of them. \"The walkers found me. Over the years. Ones and twos, out of the dark, following the light. I never turned anyone away. You don't turn anyone away from the green. There's sixty-three of us now. We grow enough for the dome and a little more, and we send the little more out, on sleds, on the paths, to the other lights. We don't know where they all are. But the array knows. The array tells us. And we send the green out into the dark, and the dark sends us back people, and we grow a little more.\"",
+      "Amara stands in the doorway of the dome, in the light, in the smell of growing things, and she understands that the bridge Yuki described — the bridge made of light, the bridge the array is building — it has already been built. It has been building itself for nine years, one dome, one beacon, one floating city, one bunker at a time, and the array did not build it, and Yuki did not build it, and she did not build it. It built itself out of the only material it has ever had: people who kept a light, and people who walked toward it, and the walking, and the keeping, and the door, always the door, held open from both sides.",
+      "\"We have a hundred and twenty-six people at the beacon,\" she says. \"Four hundred kilometres southwest. And eight more in the bunker below. And there's a floating city, somewhere, and other bunkers, and — Henrik, the array is finding them. All of them. It's going to point us at each other, one by one, until no one is alone in the dark.\"",
+      "Henrik looks at her for a long time. Then he smiles, and it is the smile of a man who has been waiting nine years to hear someone say it out loud.",
+      "\"Then you'd better come in,\" he says. \"All of you. There's soup. There's real soup, with real things in it, things that grew. And you'd better tell me about the beacon, and the bunker, and the floating city, and we're going to write it all down, because that's the other thing the green is for. It gives you something to write on the walls about. It gives you a future to describe.\"",
+      "They go in. The door closes behind them. The light holds. The green grows. And outside, in the dark, the array turns, and finds another light, and points.",
+      "It is Eugene who finds the way back.",
+      "Not the way back to the bunker. The way back to the memory. The last door. The face.",
+      "It happens on the third night in the dome, in the warmth, in the smell of growing things, in the presence of more green than he has seen in ten years, and it happens because the dome has a wall, and on the wall Henrik's people have written the things they grow and the things they hope for, and one of the things they hope for is written in a hand Eugene knows.",
+      "He knows it because it is his own.",
+      "He stands in front of the wall for a long time, reading his own handwriting, which he does not remember writing, in a place he has never been, and the words are: *The way back is not the way you came. The way back is the way forward, walked twice.*",
+      "\"Henrik,\" he says, and his voice is strange. \"Who wrote this?\"",
+      "Henrik comes and looks. \"That was here when I found the dome. That was the first thing I found, after the green. It was on the wall, in the before, when this was a research station. I always liked it. I kept it.\"",
+      "Eugene touches the words. His handwriting. From the before. From a research station he has no memory of, in a life he has no memory of, except that now — standing in the green, in the light, in the warmth — the memory comes, the last memory, the one behind the one door that would not open.",
+      "He was here. He was the agricultural officer's assistant. He was the one who filed the corridor maps — not the bunker's corridor, all the corridors, all the research stations, the whole network of them, the before's network of lights in the cold, a network of domes and beacons and stations, and he filed them all, and he remembered them all, because that was the job, and the job was to remember the way, because someday — the woman said, the woman whose face he has been walking backward toward for ten years — someday someone will need to walk it in the dark, and you will be the one who remembers.",
+      "The woman. The face. It opens, the last door, and the face is not Amara's.",
+      "It is his own.",
+      "He was the one who walked himself down the corridor. He was the one who planted the map in his own memory, because he knew — in the before, in the light, filing the maps of a network that was about to go dark — that he was the one who would forget, and he was the one who would need to remember, and the only way to remember was to plant the memory so deep that the dark could not reach it, and then to forget that he had planted it, so that the forgetting itself would be the map.",
+      "He told himself to remember. He walked himself down the corridor. He filed the map in his own head and then he forgot he had filed it, and the forgetting was the filing, and the remembering was the walking, and the walking has been going on for ten years, and it is not done yet.",
+      "Eugene Pryce stands in the dome, in the green, in the light, and he remembers, at last, that the person he has been walking toward is himself, and the door he has been keeping is the door in his own memory, and the window — the window is open from both sides, and it always was, and he is the one who opened it.",
+      "\"You knew,\" Amara says, beside him.",
+      "\"I knew,\" Eugene says. \"I just didn't know I knew. That's the way it works. You plant the knowing deep, and then you spend ten years walking toward it, and the walking is the knowing. The walking was always the knowing.\"",
+      "He turns from the wall. The green grows. The light holds. And Eugene Pryce, who has been walking backward for ten years, turns, finally, and walks forward, out of the dome, into the dark, toward the next light the array has found, because the walking is not done, and the knowing is not done, and the way back is the way forward, walked twice."
+    ]
+  },
+  {
+    "id": 51,
+    "timeline": 3,
+    "timelineName": "The Floating City",
+    "chapterNumber": 17,
+    "title": "The Harbour",
+    "setting": "Concurrent — life inside the sunlight patch",
+    "wordCount": 1444,
+    "paragraphs": [
+      "The Lantern does not absorb the city. That is the first thing, and the thing no one expected, and the thing that makes it home instead of merely shelter.",
+      "They arrive — sixty-five boats, five hundred and forty-three people, into the circle of light the great array throws — and Osei does not say *you are welcome here*. She says: \"Tie off where you are. Keep your boats. Keep your council. Keep your count. We are not a city that swallows cities. We are a harbour. A harbour holds boats. It does not take them apart.\"",
+      "So the city ties off, and keeps its boats, and keeps its council, and keeps its count, and the count is five hundred and forty-three, and then — the first morning, the first count in the light — five hundred and forty-four, because a baby is born on the second night, in the light, in the warmth, the first child born in the light in ten years, and Kira is not there to write it down, because Kira is four thousand kilometres away, but Yuki Voss writes it down, in the sketchbook, and she draws the baby, and the mother, and the light, and she does not draw it as the last of something.",
+      "She draws it as the first.",
+      "The two cities learn each other the way two cities have always learned each other: by trade, by argument, by marriage, by the slow accretion of shared days.",
+      "The Lantern has the light. That is the great thing, the thing the city crossed sixty kilometres of dark for, and it is more than they imagined. The array throws a circle of light two kilometres across, and in the circle the water is warm, and in the warmth there are fish — the fish, Seo-yun's fish, the ones who went around the dark and found the door — and the fishing is the fishing of the old world, the fishing Taryn's father told him about, the fishing where you go out in the morning and come back in the evening with more than you can carry.",
+      "But the Lantern does not have everything. It has fourteen boats, and it has the array, and it has Osei, and it has sixty-three people — it has grown, the way Henrik's dome grew, by ones and twos out of the dark — and it does not have the things the city has.",
+      "The city has the desalination plant. Hao Zhang sets it up on the second barge over, and within a week the Lantern has fresh water it did not have to ration, and the Lantern's people weep over it, because they have been drinking rationed water for nine years, and now they drink water that tastes of nothing, and nothing has never tasted so good.",
+      "The city has the school. Reika re-founds it on the first day, in the light, on the biggest pontoon, and the children of the Lantern come — there are children, Osei's people have children, children who have never once seen the sun, who were born in the dark, who have grown up in the circle of the array's light believing that the light is the whole world — and Emiko teaches them, and Yuki teaches them, and they teach Emiko and Yuki, and the school is the first place where the two cities stop being two cities and start being one.",
+      "The city has the council. Reika's council, the vote, the rule of three, the way of deciding things together that the city built out of the apocalypse's raw materials. The Lantern has never had a council. It has had Osei, and Osei has been enough, because a harbour does not need a council, a harbour needs a keeper, and the keeper has kept it. But now there are five hundred and forty-three new people, and the keeper is old, and the harbour is a city, and a city needs a council, and Osei — Osei is the one who asks for it.",
+      "\"Teach us,\" she says to Reika, on the fourth day, in Reika's lifeboat, which is now moored in the light, which is still full of mismatched cups. \"Teach us the vote. I've been the keeper for ten years, and the keeper is tired, and the harbour is a city now, and a city is not kept. A city is governed. I've held the door open long enough. Teach me to vote, so I can stop being the door and start being one of the people who walk through it.\"",
+      "Reika teaches her. It takes eleven days. On the eleventh day, the Lantern holds its first vote — the question is whether to expand the circle of light by refocusing the array's outer facets, and it is a good question, and it is argued well, and the vote is nine to two, and Osei casts her vote and loses, and she laughs, and it is the first time anyone has heard her laugh, and the laugh is the sound of a woman laying down a weight she has carried for ten years.",
+      "And Yorke — Yorke finds the thing she was looking for without knowing she was looking for it.",
+      "It is the array. Of course it is the array. It has always been the array. She climbs the barge on the second day, with Osei's permission, and she looks at the array with her engineer's eyes, and her engineer's eyes go wide, because the array is not a solar array.",
+      "It is a mirror. A vast, deliberate, mirrored array, two hundred and forty facets, and it is not catching the sun — there is no sun to catch — it is *reflecting* something. Reflecting it down, into the circle, concentrating it, and the thing it is reflecting is faint, and it is everywhere, and it is coming from above, and it is not the sun.",
+      "It is the Shade.",
+      "The array is reflecting the Shade's own light — the thin, grey, seeping light that the Shade lets through, the one percent, the residue — and it is concentrating it, focusing it, gathering the thin grey seep of a whole dark sky and pouring it down into one circle of gold, and that is the trick, that is the whole trick, that is the thing Osei has been doing for ten years without fully understanding it.",
+      "\"The array is a lens,\" Yorke breathes. \"It's a lens for the dark. It takes the dark's own light and it *focuses* it. That's why it can't be aimed. It doesn't aim. It gathers. It gathers everything the dark lets through, and it pours it down here, and the circle is the focus, and the focus is the light, and the light is — \" She stops.",
+      "Osei is watching her. \"And the light is what?\"",
+      "Yorke looks up. Up, past the array, past the facets, into the grey sky, into the Shade, into the thing that killed the sun.",
+      "\"The light is the Shade,\" she says. \"The light is the dark, seen through a lens. The light was never the sun. The light was the dark, all along, gathered. We didn't sail toward the sun. We sailed toward a lens that makes the dark bearable. And the lens is — Osei, the lens is *scalable*. If you can build one, you can build ten. You can build a hundred. You can put them over every city, every bunker, every boat. You don't need the sun. You just need the lens. You just need to gather the dark's own light and pour it down where the people are.\"",
+      "Osei looks at her for a long time. Then she looks up at the array, the cathedral of mirrored facets, the door she has been holding open for ten years, and she understands, finally, what she has been holding.",
+      "\"Then we'd better start building,\" she says.",
+      "They start building on the eleventh day. Kael welds the first new facet. Emiko holds the line. Yuki draws it. And the light holds, and the circle grows, and the two cities — the city and the Lantern, the people who sailed through the dark and the people who held the light — begin, together, to build the thing that will end the dark: not a lid, not a weapon, but a lens, a gathering, a way of taking the dark's own thin seep of light and pouring it down, circle by circle, city by city, until the dark is not gone, but is no longer empty.",
+      "The count is five hundred and forty-four, and rising.",
       "[Continue with Chapters 3-20 for all three timelines...]"
     ]
   }
