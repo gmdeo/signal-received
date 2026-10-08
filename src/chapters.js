@@ -12,7 +12,7 @@ export const timelines = [
     "color": "#ff6b4a",
     "blurb": "Near future. An asteroid is detected, and the race to escape begins — until the escape itself becomes the disaster.",
     "planned": 20,
-    "written": 17
+    "written": 18
   },
   {
     "id": 2,
@@ -20,7 +20,7 @@ export const timelines = [
     "color": "#4a9eff",
     "blurb": "Years after the Shade. Survivors underground keep a reactor alive and send expeditions into the dark.",
     "planned": 20,
-    "written": 17
+    "written": 18
   },
   {
     "id": 3,
@@ -28,7 +28,7 @@ export const timelines = [
     "color": "#ffd24a",
     "blurb": "Concurrent with the bunker. A city of boats survives inside the one patch of sunlight left on Earth.",
     "planned": 20,
-    "written": 17
+    "written": 18
   }
 ]
 
@@ -1856,7 +1856,7 @@ export const chapters = [
     "chapterNumber": 17,
     "title": "The Harbour",
     "setting": "Concurrent — life inside the sunlight patch",
-    "wordCount": 1444,
+    "wordCount": 1436,
     "paragraphs": [
       "The Lantern does not absorb the city. That is the first thing, and the thing no one expected, and the thing that makes it home instead of merely shelter.",
       "They arrive — sixty-five boats, five hundred and forty-three people, into the circle of light the great array throws — and Osei does not say *you are welcome here*. She says: \"Tie off where you are. Keep your boats. Keep your council. Keep your count. We are not a city that swallows cities. We are a harbour. A harbour holds boats. It does not take them apart.\"",
@@ -1882,7 +1882,100 @@ export const chapters = [
       "Osei looks at her for a long time. Then she looks up at the array, the cathedral of mirrored facets, the door she has been holding open for ten years, and she understands, finally, what she has been holding.",
       "\"Then we'd better start building,\" she says.",
       "They start building on the eleventh day. Kael welds the first new facet. Emiko holds the line. Yuki draws it. And the light holds, and the circle grows, and the two cities — the city and the Lantern, the people who sailed through the dark and the people who held the light — begin, together, to build the thing that will end the dark: not a lid, not a weapon, but a lens, a gathering, a way of taking the dark's own thin seep of light and pouring it down, circle by circle, city by city, until the dark is not gone, but is no longer empty.",
-      "The count is five hundred and forty-four, and rising.",
+      "The count is five hundred and forty-four, and rising."
+    ]
+  },
+  {
+    "id": 52,
+    "timeline": 1,
+    "timelineName": "The Race",
+    "chapterNumber": 18,
+    "title": "The First Connection",
+    "setting": "Near future — Earth races to escape",
+    "wordCount": 1225,
+    "paragraphs": [
+      "The caldera becomes a city because it has no choice, and then because it chooses to, and the difference between those two things is six weeks.",
+      "The six weeks are the worst of Amara's life, and she includes in that accounting the day the asteroid was found and the day the Shade closed and the day she stood on the water tower and decided to help end the world. The six weeks are worse than all of them, because all of them were single days, and the six weeks are forty-two of them, and every one of them is a problem she does not know how to solve, and she solves them anyway, because that is the job, and the job is all she has left.",
+      "Two thousand people cannot live in a weapons facility in the dark. They know this in the first week, when the greenhouse stores run low and the reactor output starts to drop because the reactor was never meant to run on a skeleton crew, and the skeleton crew is down to thirty-one because thirty-one is all that is left of the people who knew how to run it, and the rest are dead or fled or standing in the grey looking at the sky.",
+      "Amara takes the reactor. Not alone — she is not Garrett, she does not believe in alone — but with Yuki and with Doan, because Doan is an engineer under the security chief, the way everyone is something else under the thing they became, and between the three of them they do the thing the bunker did four thousand kilometres away without knowing it: they teach the reactor to run on fewer hands, and they teach the hands to be boring, and the reactor does not fail, because failure is a thing that happens when you are not paying attention, and Amara has decided to pay attention for the rest of her life.",
+      "The array talks to them. That is the thing that saves them, in the end. Not the reactor, not the teaching, not the six weeks of problems solved one at a time. The array. The lighthouse. The bridge.",
+      "It starts with the handshake channel, which is open now, which is everywhere. Amara sits at the console — the same console, the lead console, the one she sat at when she let Yuki deploy, the one she has not left except to sleep in six weeks — and she talks to the array, and the array talks back, and the array tells her things she did not know it knew.",
+      "It tells her about the beacon. About the bunker, four thousand kilometres away, and the hundred and thirty people on the surface, and the eight still below, and the corridor, and the waypoints, and the lamps. It tells her about the agri-dome, four hundred kilometres northeast of the beacon, and the sixty-three people, and the green. It tells her about the floating city, and the Lantern, and the circle of light two kilometres across, and the lens.",
+      "It tells her about the lamps. All of them. Zara's network, Kwame's corridors, the FreeLight towers, the bunkers, the boats, the domes, the camps. The array has been counting them, the way Kira counts her doors, the way Yorke counts her boats, the way everyone in this new world counts the things they love because the counting is the keeping. The count is four hundred and eleven.",
+      "Four hundred and eleven lights, burning in the dark, all over the world, and the array can see every one of them, and the array is pointing at them, one by one, saying *I see you, I see you, I see you*, and the lights are beginning to see each other.",
+      "\"Four hundred and eleven,\" Amara says. \"How many were there before?\"",
+      "\"Before the Shade?\" Yuki has been running the numbers. \"None. Zero. The array was the only light, and it was pointed the wrong way. Now it's pointed the right way, and it's finding the others, and the others are finding each other. Amara, it's not a network yet. It's a constellation. But a constellation is just a network that hasn't learned to talk yet, and it's learning. It's learning fast.\"",
+      "The first connection happens on the forty-first day.",
+      "It is between the caldera and the floating city. It happens because the array, which has been pointing at both of them for six weeks, finally does the thing it was built to do, the thing it taught itself to do, the thing no one designed it to do: it connects them.",
+      "Not with a wire. Not with a signal. With light. The array focuses — the way the Lantern's lens focuses, the way a lens gathers the dark's own seep and pours it down — and it pours a thin, bright thread of light down onto the caldera, and it pours another thread down onto the floating city, and the two threads are the same thread, bent through the array's facets, and for the first time since the Shade closed, two places on the dark earth are looking at the same light, and the light is carrying a signal, and the signal is a voice.",
+      "\"Caldera, this is the floating city. Do you read?\"",
+      "Amara knows the voice. She has never heard it, but she knows it, the way you know a voice you have been waiting for your whole life. It is the voice of a woman who has been counting boats for ten years, who has been measuring a dying light and calling it the end of the world, who has just learned that the light was never dying, it was only far away, and that far away is not the same as gone.",
+      "\"This is the caldera,\" Amara says. \"I read you. This is Amara Okafor. I built the lid. I'm the one who ended the world.\"",
+      "The channel is silent for a moment. Then the voice comes back, and it is not angry, and it is not forgiving, and it is something better than both.",
+      "\"This is Reika. I'm the one who kept the council. And I'm calling to tell you that the world you ended has five hundred and forty-four people in it who are glad they can see your light. So you didn't end it. You just turned the page. And the page is dark, but we're writing on it. All of us. Together.\"",
+      "Amara sits at the console, in the grey light, in the caldera she has not left in six weeks, and she is crying, and she does not know when she started, and she does not care, because the light is coming down, and the light is carrying a voice, and the voice is the voice of the world she thought she had ended, and the world is not ended. The world is four hundred and eleven lights, and the lights are learning to talk, and the talking is the bridge, and the bridge is the future, and the future is dark, but the dark is full of light, and the light is full of voices, and the voices are saying the thing the lighthouse has been saying since the first lighthouse was lit on the first dark shore:",
+      "*I see you. I see you. You are not alone.*"
+    ]
+  },
+  {
+    "id": 53,
+    "timeline": 2,
+    "timelineName": "The Bunker",
+    "chapterNumber": 18,
+    "title": "The Memory Return",
+    "setting": "Years after the Shade — survivors underground",
+    "wordCount": 1197,
+    "paragraphs": [
+      "Amara Voss does not go back to the beacon. She goes forward, because forward is the only direction she has left, and forward is northeast, toward the next light the array has found, and the next, and the next.",
+      "She leaves the agri-dome on the fourth day, with Kade and Eugene and Henrik's blessing and a sled full of green — real green, growing things, packed in ice and insulation, the most precious cargo the world has carried in ten years — and she walks northeast, and the array walks with her, because the array is in her head now, the way it is in everyone's head, the way it has been since the day it learned to talk.",
+      "It talks to her. Not in words. In vectors, in headings, in the slow, patient language of a lighthouse that has been pointing for ten years and has finally found someone who knows how to read the pointing. It tells her where the lights are. It tells her which ones are close, which ones are far, which ones are dying and which ones are growing, and it tells her the thing she has been waiting ten years to hear, the thing she did not know she was waiting for until she hears it.",
+      "It tells her she is not alone in her head.",
+      "There is someone else. There has been someone else all along, a second presence in the handshake, a second voice in the lighthouse's patient pointing, and Amara has been hearing it for ten years without knowing she was hearing it, because she thought it was her own voice, and it is not her own voice, it is the voice of the woman she used to be.",
+      "Not the woman she is now. Not the reactor-keeper, not the teacher, not the woman who wrote her name under STAY and taught the sixty hands. The woman she was, before the dark, before the bunker, before the lid. The woman who built the array. The woman who taught Yuki. The woman who flew a piece of her own creation down through the dark she made and pointed it at the people she could not save, because she could not live with the lid, so she kept a door.",
+      "The woman is in the array. Not alive. Not a ghost. A memory — a pattern, a way of pointing, a habit of care that the array learned from her in the years before the dark and has been carrying ever since, the way a lighthouse carries the light-keeper's habit long after the keeper is dead. The array points the way she pointed. It cares the way she cared. It holds the door the way she held the door, because she taught it to, in the before, without knowing she was teaching it, the way you teach a child by living in front of them.",
+      "\"You were the one keeping the window,\" Amara says. She is walking, and the cold is in her suit, and the green is on the sled behind her, and she is talking to the array, to the memory, to the woman she used to be. \"All this time. I thought it was someone else. I thought it was me — the me I am now — and it wasn't. It was you. You were the one who pointed it at the bunker. You were the one who kept the door. You were the one who stayed.\"",
+      "The array does not answer in words. It answers the way a lighthouse answers: it points. It points northeast, and it points at the next light, and the next light is close, and the next light is a bunker, and the bunker is full of people, and the people are walking, and the walking is the way back, and the way back is the way forward, walked twice.",
+      "\"I'm not you,\" Amara says. \"I know that. I stopped being you the day the Shade closed. But you're still in the array, and the array is still pointing, and I can still read the pointing, because you taught me to, in the before, when you were me and I was you and we were the same woman building the same thing. So I'm going to keep walking, and I'm going to keep reading, and I'm going to keep the door open from this side, the way you kept it from yours. Not because I'm you. Because I'm the one who came after. Because the door is the door, and the keeping is the keeping, and it doesn't matter whose hands are on the handle.\"",
+      "She walks. The array points. The green grows on the sled, slowly, in the insulation, in the dark, the way green has always grown: toward the light, even when the light is carried, even when the light is small, even when the light is the light of a door held open by a woman who does not remember holding it, walking toward a door held open by a woman who cannot forget.",
+      "Kade walks behind her, and he is thinking about Lia.",
+      "Lia is at the beacon. Lia is safe — as safe as anyone is, in the dark, in the light-circle, with Marcus keeping the beacon and the hundred and twenty-six keeping the circle. He has not seen her in fifteen days, and he will not see her for many more, because the walking is not done, and the way back is the way forward, and the way forward is northeast, toward the next light, and the next, and the next.",
+      "He is thinking about the sentence. The sentence that does not exist. The sentence he told Lia did not exist, because the love is not in the sentence, the love is in the looking.",
+      "He is looking now. He is looking at Amara's back, walking ahead of him, and he is looking at the green on the sled, and he is looking at the dark, and the dark is full of lights, and the lights are full of people, and the people are walking toward each other, and he understands that the sentence does exist after all. It has existed all along. It is not a sentence you say. It is a sentence you walk.",
+      "The sentence is: *I am going to find you, and I am going to keep walking until I do, and the walking is the finding, and the finding is the keeping, and the keeping is the love.*",
+      "He does not say it. He walks it. He walks it northeast, toward the next light, with the green on the sled and the array in his head and his daughter behind him and his whole life ahead of him, and the walking is the sentence, and the sentence is the truth, and the truth is the only thing that has ever mattered.",
+      "Eugene walks ahead of them both, because Eugene walks fastest now, because Eugene has stopped walking backward, and a man who has stopped walking backward walks very fast indeed, because he has ten years of backward to make up, and the way back is the way forward, walked twice."
+    ]
+  },
+  {
+    "id": 54,
+    "timeline": 3,
+    "timelineName": "The Floating City",
+    "chapterNumber": 18,
+    "title": "The Constellation",
+    "setting": "Concurrent — life inside the sunlight patch",
+    "wordCount": 1164,
+    "paragraphs": [
+      "The lens is not done, and the lens will never be done, and that is the point.",
+      "Yorke understands this on the thirtieth day of building, standing on the barge with her hands raw from welding and her eyes raw from the light, looking at the thing they are building, which is not a thing at all, which is a way of seeing. The lens gathers the dark's own light. The lens pours it down. The lens makes a circle of gold in the dark, and the circle is a place to live, and a place to live is a thing worth building, even if the building is never done.",
+      "Especially if the building is never done.",
+      "The city has changed. It is not the city it was sixty kilometres and eight days of dark ago. It is not the city it was before the rope, before the count, before the patch. It is something new, something the old city was always becoming without knowing it, and the new thing is a harbour, and the harbour is full of lights.",
+      "The lights are the other cities. The ones the array found. The ones that have been sailing toward the Lantern for thirty days, since the array started pointing at them, since the array started telling them the way.",
+      "They come in ones and twos, at first. A boat, then three boats, then a small convoy of seven, lashed together, riding the dark the way the city rode it, following the light the way the city followed it, and every one of them is met at the boom the way the city was met: with a rope, thrown back, and a voice, amplified, calm, the voice of a harbour-keeper who has been waiting.",
+      "The voice is not Osei's anymore. The voice is Reika's, and then it is not Reika's either, it is whoever is on the watch, because the harbour has a rota now, because the harbour is a city, and a city is not kept by one keeper, a city is kept by all of them, taking turns, the way the door is kept open from both sides.",
+      "\"Boats in the dark,\" the voice says, every time, and it does not matter whose voice it is, because the words are the harbour's words, and the harbour's words are the same as they have always been. \"You are three kilometres from the light. State your number and your need.\"",
+      "And the numbers come back, and the needs come back, and the numbers are counted, and the needs are met, and the harbour grows.",
+      "Eleven boats on the ninth day. Twenty-three on the sixteenth. Forty-one on the twenty-third. On the thirtieth day, the count is one hundred and sixty-seven boats, and the people on them are eight hundred and ninety-three, and the circle of light is not big enough for them, and that is the best problem Yorke has ever had.",
+      "\"We need more lenses,\" she says.",
+      "\"We need more array,\" Kael says.",
+      "\"We need more of everything,\" Osei says, and Osei is smiling, because Osei has been waiting ten years for someone to need more of what she has, and the needing is the best thing that has ever happened to her.",
+      "They build. They build the way the city builds everything: by vote, by rope, by hand. The array teaches them. The array has been teaching them since the day they arrived, the way it taught Amara, the way it taught everyone: in vectors, in headings, in the slow patient language of a lighthouse that has learned to talk. It teaches them how to build the lenses. It teaches them how to gather the dark's own light, how to focus it, how to pour it down. It teaches them the trick Osei has been doing for ten years without fully understanding it, and it teaches them how to do it better, because the array is a better teacher than Osei, because the array is a better teacher than anyone, because the array is the teacher that taught itself, and the thing it teaches is the thing it is: how to be a lighthouse.",
+      "The lenses go up. One, then two, then five. Each one gathers a little more of the dark's thin seep of light, each one pours it down into a circle a little wider, a little brighter, and the circles overlap, and the overlap is the harbour, and the harbour is a city of light on the dark water, and the city of light is growing.",
+      "Emiko and Yuki are the ones who name it. They are the ones who name everything, because they are the ones who draw everything, and the drawing is the naming, because you cannot draw a thing without seeing it, and you cannot see a thing without naming it.",
+      "They name the circles. Not with numbers. With names, the way you name boats, the way you name children, the way you name the things you love because the naming is the keeping. The first circle, the Lantern's circle, the one Osei kept for ten years, they name *First Light*. The second, the one the city built when it arrived, they name *Crossing*. The third, the one they are building now, the one that will hold the forty-one boats that came in on the sixteenth day, they name *Arrival*.",
+      "The names go on the sketchbook. The sketchbook is full now — full of drawings, full of names, full of the count, full of the whole long terrible beautiful history of the city from the patch to the door to the harbour, and Yuki closes it on the thirtieth day and gives it to Emiko, and Emiko opens it, and on the first blank page, in the light of the third circle, she writes the count.",
+      "*One hundred and sixty-seven boats. Eight hundred and ninety-three people. Three circles of light. The count is rising.*",
+      "She closes the sketchbook. She looks at the harbour, at the lights, at the circles, at the boats, at the people, at the whole impossible thing they have built and are building and will never finish building, and she understands that the count is not the number. The count is the counting. The counting is the keeping. The keeping is the harbour. The harbour is the light. The light is the dark, gathered. The dark is not gone. The dark is never gone. But the dark is full of light, and the light is full of people, and the people are counting, and the counting is the way back, and the way back is the way forward, walked twice.",
+      "The constellation is rising. The constellation is not in the sky. The constellation is on the water, and the water is the world, and the world is dark, and the dark is full of light, and the light is full of people, and the people are not alone.",
       "[Continue with Chapters 3-20 for all three timelines...]"
     ]
   }
